@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1c43d6ff-51ee-4b5d-81aa-0009d6fae9bd" name="detailUML" linkedPackageId="5df6a07b-facd-4c5a-ab9e-d3f501a15b48" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="d8346aee-b88e-4bd9-b77d-c2e02ecc8723">
+      <elementDefinition Id="72498db4-693b-4291-84ca-94396e758fa6" />
+      <body>The constructor
+calls the AddHealth() method in TreasureSeeker</body>
+      <annotatedElements>
+        <classMoniker Id="d9c63373-1b6c-4af3-865c-64a59447e92c" LastKnownName="ExtraHealth" />
+      </annotatedElements>
+    </comment>
+    <comment Id="8a2c39cb-c0a2-4e2d-a4bb-c23c0844c805">
+      <elementDefinition Id="aa57a247-169b-47e7-8adc-52495bf225ad" />
+      <body>The constructor calls the AddMoney() method in TreasureSeeker</body>
+      <annotatedElements>
+        <classMoniker Id="c74507fd-8eb3-481f-8f08-24ee3bc78ec7" LastKnownName="ExtraMoney" />
+      </annotatedElements>
+    </comment>
+    <comment Id="486e0fe8-df72-4077-8d2f-f64f0ec614bd">
+      <elementDefinition Id="7e42e3f2-d63c-4936-8cac-77c572245755" />
+      <body>The constructor calls the AddLevel() method in TreasureSeeker</body>
+      <annotatedElements>
+        <classMoniker Id="0e9f2628-ddac-46c0-84a2-78ce4a6d4390" LastKnownName="ExtraSecretPassageWay" />
+      </annotatedElements>
+    </comment>
+    <comment Id="228f0184-c2f5-41ab-b839-e54e428a4dfd">
+      <elementDefinition Id="cd03dbdc-40ea-4759-836a-e7f93b73f954" />
+      <body>A form generated when the user asks for instructions</body>
+      <annotatedElements>
+        <classMoniker Id="d4b5e035-cc71-4237-aab9-897bdaadf906" LastKnownName="Instructions (form)" />
+      </annotatedElements>
+    </comment>
+    <comment Id="61748879-1216-4829-9ce8-85ec6fdbe532">
+      <elementDefinition Id="7d3706d1-490c-4bda-b160-e7ddb70ba616" />
+      <body>A form generated when the MonsterAttack() method is called</body>
+      <annotatedElements>
+        <classMoniker Id="5b96d4e1-5b21-439b-a1f6-428acbb6f5db" LastKnownName="MonsterAttack (form)" />
+      </annotatedElements>
+    </comment>
+    <comment Id="e2fe7687-b7c5-43de-ba00-77b1c542033d">
+      <elementDefinition Id="60432ae7-ef7c-44a6-8c94-16152991e0e8" />
+      <body>A form generated when the hero is in a certain spot in the maze</body>
+      <annotatedElements>
+        <classMoniker Id="d9a1378c-3ff9-4bec-bc13-5fe87f943333" LastKnownName="KillerRabbitAttack (form)" />
+      </annotatedElements>
+    </comment>
+    <comment Id="01126dc8-d0fb-46e7-a2f4-4f7f051e4912">
+      <elementDefinition Id="7f649851-611d-4dd9-9548-6cbc2ac8504e" />
+      <body>A form generated when the user clicks the exit option in the toolbar.  Asks user whether they are done.</body>
+      <annotatedElements>
+        <classMoniker Id="323e1a98-f57e-498f-a8f5-44f3cf09cce8" LastKnownName="quitAreYouSure (form)" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3f6486f8-668e-4910-b8a3-d3b7a44a31db" name="Maze" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="67a4557a-5955-40b5-9aed-1a04ed26e737" />
+        <targetEnds>
+          <association Id="42ec4cea-be12-4b1d-bb76-92cb3cd98b6b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c244bab1-dba6-491d-b13f-509185e50a0d" LastKnownName="TreasureSeeker" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="97893e4b-f002-4854-890c-88078c5b61f1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dcf35369-2346-4262-b9d8-43c65eb5c6da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7548b9f8-398a-464c-aba7-d1766da8a819" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="858146c5-3003-404d-bc20-e82a35a300ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f1b6f89d-73e8-4dab-a6d2-cb77b3042c73" />
+          </association>
+          <association Id="0db06ee6-0bf6-44c6-909d-7760a5ec351c" isDerived="false" sourceEndRoleName="Maze" targetEndRoleName="Monster" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4e66767d-87af-4001-8db5-8cb310161b31" LastKnownName="Monster" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="145e4ee7-f4ab-4b3c-a030-e0eea3a92aa4" name="Maze" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8c41f120-4bbe-4977-ab3b-c1f23fb130f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78b71884-af12-4ca8-9021-0fb093057a9c" name="Monster" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="59fdf88a-4d45-4153-b202-aedf39d2039e" name="Lower" value="0-5">
+                      <elementDefinition Id="755916be-a31c-4319-8ad1-efffcad9fc29" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d196fdb7-fb97-40d3-a132-fda4eb0ff5ee" name="Upper" value="0-5">
+                      <elementDefinition Id="62e2766d-c3b8-4a7e-b3d0-cbd6dc267219" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="33812f74-121e-4803-9312-a08b6e9d27b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5a1b10c2-f91b-4f65-89cf-606b9da70039" />
+          </association>
+          <association Id="bf0c1d0f-8e4b-498a-ace0-411753a6c40a" isDerived="false" sourceEndRoleName="Maze" targetEndRoleName="Bonus" isLeaf="false" isAbstract="false">
+            <classMoniker Id="bccbd42a-ab02-4bfa-bc22-b8fdf87e7c40" LastKnownName="Bonus" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bac5f5a6-1f81-4786-a55a-32837b60e950" name="Maze" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fb873b77-9f6f-4895-9ae4-f56499f63498" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1200ff2-4c7b-4380-8682-a2ea0516d11c" name="Bonus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="4f2899dd-d750-406a-b19b-ca958ece7e78" name="Lower" value="0-5">
+                      <elementDefinition Id="df27e887-3a3e-4060-981c-331ce20ce9b2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="32fde387-8db7-45e9-b5d1-bdd7963d41d0" name="Upper" value="0-5">
+                      <elementDefinition Id="e041e832-f869-42b5-9d8d-63d5060ab1a6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d8837915-a4b9-4b86-a61e-cc0f914247b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="218cec70-c0d0-4fac-a399-e339a1e7f3bc" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7cf062d9-0875-4371-bc10-91e25fc2e22b" name="Random rand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="952cadf0-2d13-45b2-9d90-529922c1c55d" />
+          </property>
+          <property Id="a76d512b-e846-439d-9560-d8ab96f8a3be" name="TreasureSeeker hero" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6cfb6915-135f-4481-bd30-db4c7bfe4a9c" />
+          </property>
+          <property Id="0a373c8a-d948-4709-939f-cae7b62588fa" name="Monster[] monsters" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9c654233-5e45-4a01-8d1a-bca9d22ab1b0" />
+          </property>
+          <property Id="5e98b9d1-aa2c-4e6e-ba4d-91308f1cf8c5" name="Bonus[] bonuses" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="76fa35ed-584b-4c05-8b25-b666118c6c4b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c244bab1-dba6-491d-b13f-509185e50a0d" name="TreasureSeeker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1487b760-1fa6-4ba2-95c8-bee824a486e7" />
+        <ownedAttributesInternal>
+          <property Id="dfd5eca9-9684-4222-aafa-c53e93edcf95" name="&lt;&lt;property&gt;&gt; Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c7eaa7f2-ac90-40c9-b741-9d30fee96d53" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7b9c087e-bb45-48d3-8904-42f87b6a54ff" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="fd25856b-5655-4496-8fb1-fcab93e31725" name="&lt;&lt;property&gt;&gt; Money" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="293ead47-309d-4cde-8ee7-44cea4326fe9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7b9c087e-bb45-48d3-8904-42f87b6a54ff" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="736f02d1-214a-4245-99fa-e278231ddd9f" name="&lt;&lt;property&gt;&gt; Level" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e116c3c5-bcbb-4130-9d08-90c7bec008bb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7b9c087e-bb45-48d3-8904-42f87b6a54ff" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="734ddab7-456c-4e59-93bd-a39d251f98fe" name="void AddHealth" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4d40f506-86e2-4e21-949c-8c32c0d05b43" />
+          </operation>
+          <operation Id="a9e36222-e59e-43a2-8aee-49acb3ecca0a" name="void AddMoney" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f6ea8b97-ec93-4a12-86c9-b7e4db327e1c" />
+          </operation>
+          <operation Id="dafd325f-47c0-4df7-b01b-aac17794f6d3" name="void AddLevel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="566c1a9f-e769-40f3-af93-e20b4caac4c5" />
+          </operation>
+          <operation Id="26eb7ccf-9d6b-417c-a659-b9209d14a549" name="void Attack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="be31245d-d8b9-455b-ba14-8aa59f90a824" />
+          </operation>
+          <operation Id="c1471631-27c9-4e1d-a96e-c9cc83f17d49" name="void Bribe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cbbf1b1b-606b-41b4-ada7-4e3b6eb4a19e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4e66767d-87af-4001-8db5-8cb310161b31" name="Monster" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="90f1dea8-04d8-4f06-9ca9-4d4ee5c78147" />
+        <targetEnds>
+          <association Id="d126b135-bd85-4e3e-9b6c-01a339eee15a" isDerived="false" sourceEndRoleName="Monster" targetEndRoleName="Gremlin" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4328df36-43ba-4a37-bd6b-1f932327055c" LastKnownName="Gremlin" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3bbafbfa-da7d-43fb-992c-842f8572f138" name="Monster" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="95d91c66-ad1e-41b7-88c6-935ed235fdae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b8ffda2c-cede-4b90-b5e5-ace31404cb8a" name="Gremlin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="eb20559a-d83c-4b3c-a2d0-35bf8adac6f1" name="Lower" value="0-3">
+                      <elementDefinition Id="15447205-b9b2-43e5-a412-9d9c4de1f6e7" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="889ef151-b045-4e27-9012-87467f499ed6" name="Upper" value="0-3">
+                      <elementDefinition Id="c25b8bd8-b936-4fe9-abe3-06d2149e8958" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="91581159-dc2a-4136-84e4-ae9265635f27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2395dd7b-9353-43a4-96e9-27c260b03473" />
+          </association>
+          <association Id="6d0b11ca-4127-4cca-8c0a-ce3d751ba774" isDerived="false" sourceEndRoleName="Monster" targetEndRoleName="Liger" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a4019340-080c-4abb-bc18-ef8e51c0a5e8" LastKnownName="Liger" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="269ec102-6beb-4b18-aa77-62e4caa5584c" name="Monster" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f94b9888-abeb-42f3-9feb-f9a693ef37d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dbab580f-bcef-49b5-9c04-c30d99cf9bf1" name="Liger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="2094819c-0bb7-4e97-a372-e1f4d7efe096" name="Lower" value="0-2">
+                      <elementDefinition Id="bd8b99dd-f953-4d67-a3ad-aa728f78fbc0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f41860ba-86a2-4cc4-93f2-c0f0552e58ec" name="Upper" value="0-2">
+                      <elementDefinition Id="67f0f5f4-152b-4f89-8b30-0bcaec1d2b78" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ac59553f-16e1-4d38-9c26-f260c5f46a83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f59874be-77f3-4efb-b909-dd54237c167d" />
+          </association>
+          <association Id="6fc7edb9-7509-481f-9e27-d4a1d0b55024" isDerived="false" sourceEndRoleName="Monster" targetEndRoleName="KillerRabbit" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e82d4440-53d1-4c90-b9ea-f155fc29fee2" LastKnownName="KillerRabbit" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3dce445b-4d1f-433b-b458-99acbc6a4c73" name="Monster" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e1b60fea-ea80-481b-b7fd-8537ed8a9231" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="160f44ca-3b19-4dfc-a7de-bbc985378423" name="KillerRabbit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="975a5ffb-0dc6-4116-9d81-b3314cf08102" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e0330f5d-9987-4650-b407-74c522bf5523" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b372c83b-76d5-417d-884e-b27cea60f786" name="&lt;&lt;property&gt;&gt; Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8333b306-9a4c-4e7b-931c-c5a540fbf27f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bccbd42a-ab02-4bfa-bc22-b8fdf87e7c40" name="Bonus" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="49cd77eb-1fec-4500-b716-297d6bdedb46" />
+        <targetEnds>
+          <association Id="f9497d0a-f2ef-47d9-bbed-00ca4749700f" isDerived="false" sourceEndRoleName="Bonus" targetEndRoleName="ExtraHealth" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d9c63373-1b6c-4af3-865c-64a59447e92c" LastKnownName="ExtraHealth" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f336f94-2c6b-4a8b-8ad8-6eaa8d7f29b2" name="Bonus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2f1326cc-41ff-40d7-931a-166517e2178d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a4ba136-fc36-4f8a-a7b3-012cbd891d71" name="ExtraHealth" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="fb9837e4-bdbc-4558-9c07-ee5360f20010" name="Lower" value="0-2">
+                      <elementDefinition Id="7efd89a7-a500-425b-8629-21346bc590d2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a02fa012-3e85-496d-a5da-7b1004d7d323" name="Upper" value="0-2">
+                      <elementDefinition Id="02fb9dea-b5fd-4f6c-8bf0-1846f1f251e5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="94c703ed-26d8-482f-bd67-e78290713399" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a9b94a08-927a-4a5b-ab17-b64ad468a017" />
+          </association>
+          <association Id="be5b4695-9271-42b9-82df-8063ba508528" isDerived="false" sourceEndRoleName="Bonus" targetEndRoleName="ExtraSecretPassageWay" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0e9f2628-ddac-46c0-84a2-78ce4a6d4390" LastKnownName="ExtraSecretPassageWay" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86cdd458-31ab-4ddf-be09-acbf83f1aa21" name="Bonus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="63b3430e-6fdf-450d-9a7f-3095f8ed86e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7add9a1c-8ee9-4151-8835-f7b835c42081" name="ExtraSecretPassageWay" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="b1e943ac-7405-4efb-9d74-8fe634771ab2" name="Lower" value="0-1">
+                      <elementDefinition Id="545c25f1-ecc7-434e-8558-e66e61e26dd7" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3eb04748-67ca-4f23-b7a3-6017427af4f1" name="Upper" value="0-1">
+                      <elementDefinition Id="7c94b0b5-6ffc-4a20-904c-9f9d5e1a1101" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="45668574-1847-4123-ac13-9de787d1d2ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="61626b8d-4b47-409f-8211-76cf716d1215" />
+          </association>
+          <association Id="d783a5c6-d2e1-4d35-aa21-6c850349733a" isDerived="false" sourceEndRoleName="Bonus" targetEndRoleName="ExtraMoney" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c74507fd-8eb3-481f-8f08-24ee3bc78ec7" LastKnownName="ExtraMoney" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea744e35-7cdb-452d-a139-3245c8e4d7b6" name="Bonus" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ec821cb-93b6-4b37-96a9-87917e64dc17" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="41388d33-fe04-4f95-bb14-87599bdf17da" name="ExtraMoney" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="fe086718-aece-4acf-993a-65251613483d" name="Lower" value="0-2">
+                      <elementDefinition Id="8e715ad4-8c57-485c-bfe4-a2ebb084d73f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="135e378f-95db-46f1-a6b8-378544fb1659" name="Upper" value="0-2">
+                      <elementDefinition Id="11194364-937f-4d7e-a3af-df6f6dde7bcd" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f6e672ac-686c-4f9c-8026-2fd8ae3ea4e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="73d31579-34ff-423c-8cb7-5f66dcb62239" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4328df36-43ba-4a37-bd6b-1f932327055c" name="Gremlin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eee0b4cb-2b4a-49e6-8708-9b6369515320" />
+        <ownedAttributesInternal>
+          <property Id="1cd8a5a6-be01-46fc-a136-9bb577bdb15c" name="&lt;&lt;property&gt;&gt; Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5560daff-7f16-40aa-a4df-9f7742a18713" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e82d4440-53d1-4c90-b9ea-f155fc29fee2" name="KillerRabbit" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="319f4ba7-3e69-4f0e-9009-60f9c4a7a755" />
+        <ownedAttributesInternal>
+          <property Id="33f7ea33-85c1-4a5f-9d27-637dbc6cd1d1" name="&lt;&lt;property&gt;&gt; Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c6e8746d-67b7-4733-8b78-aabb491dd09c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4019340-080c-4abb-bc18-ef8e51c0a5e8" name="Liger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e776a769-b46d-47ba-a626-10223a1c8df7" />
+        <ownedAttributesInternal>
+          <property Id="c8001141-7e08-4eca-bcf6-b0d51bd94dca" name="&lt;&lt;property&gt;&gt; Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5781a09b-ada1-47be-a8d1-f63d532be1b0" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d9c63373-1b6c-4af3-865c-64a59447e92c" name="ExtraHealth" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12c35e71-907d-4cd9-8de7-d336a792ffad" />
+        <ownedOperationsInternal>
+          <operation Id="47e0fe3f-567c-46c6-a7f5-c3e05741fc4c" name="public ExtraHealth" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c785fba3-bc44-4e6b-9c32-97817a0308f8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0e9f2628-ddac-46c0-84a2-78ce4a6d4390" name="ExtraSecretPassageWay" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d045bbec-3e36-4e77-8eff-da08bc7263cd" />
+        <ownedOperationsInternal>
+          <operation Id="892c0a37-c448-4d5e-b274-2a42db762c26" name="public ExtraSecretPassageWay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2f048c02-e143-4be5-8767-a451d532a21b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c74507fd-8eb3-481f-8f08-24ee3bc78ec7" name="ExtraMoney" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="270ec555-cfe6-4f48-848a-68947acd193b" />
+        <ownedOperationsInternal>
+          <operation Id="75127088-cd91-4a26-abf8-5052100ab2b9" name="public ExtraMoney" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="30cdfd2c-b979-45ef-925a-c89fbfbbdb63" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7b9c087e-bb45-48d3-8904-42f87b6a54ff" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="134fa09c-5b07-47c8-b547-4cea45c0cdb2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="faa3d1c3-acba-42de-8f95-717572744800" name="CastleExplorer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ee57a8b7-8b26-4ca8-a5c9-b043cdfc0aea" />
+        <targetEnds>
+          <association Id="6c9ec1cf-cf45-4883-8d78-fe25d2b4a2c3" isDerived="false" sourceEndRoleName="Castle Explorer" targetEndRoleName="Maze" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3f6486f8-668e-4910-b8a3-d3b7a44a31db" LastKnownName="Maze" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd1c3e79-baf8-48ef-bba0-cfbd01964039" name="Castle Explorer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="145a0a8d-b56d-4e0a-85ca-ac20472db380" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="98d51016-76bd-4abf-9284-94e897035abe" name="Maze" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="0054cec7-d6fb-47ef-95bc-8c89aa0d687f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ae7f7b60-9c22-4ab6-8d64-a95c1dd90ea3" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="360c2e76-3dc0-4fb6-b825-b5ac13ccbbde" name="Random rand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="07eb0cd6-e425-4e35-a567-3f8dd0749719" />
+          </property>
+          <property Id="4b746577-914a-4150-9e75-7959942aee25" name="Maze maze" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc8b6f24-b0e1-4b23-98e0-33577e8337b8" />
+          </property>
+          <property Id="48d971b3-4e2e-4c4a-9376-31be09987e6d" name="bool[4,13,13] levelArrays" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fe0e2658-148b-4caf-986d-216e75208cc9" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="33166449-77eb-4c6e-80e4-7cab76053561" name="save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b9fd2349-03c7-4a14-a8b2-c4687ea7d452" />
+          </operation>
+          <operation Id="fec30db2-13a1-49b2-9c36-1d798bd2ffe0" name="playButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="221cf140-27f7-4bd1-bf62-614feb28e0bd" />
+          </operation>
+          <operation Id="2278c6ec-1396-470f-b887-2ebe20409f21" name="instructionsButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f5e8ea57-f8db-4d70-bca8-8a1629900904" />
+          </operation>
+          <operation Id="e8e3834e-d192-418d-aa46-9861e5d7b027" name="quitButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="98e51a7e-8df4-4073-9087-e7d21d2b5f04" />
+          </operation>
+          <operation Id="d0cd2748-fb65-479c-bd5e-6cbd6f37fc0b" name="keyDown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a1a3749-5463-4b07-a600-b679a589a0d6" />
+          </operation>
+          <operation Id="a66329de-c3cd-45f4-9ee2-1e277d489a29" name="MonsterAttack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a111802c-f76a-432d-aaba-79aa792ed5ca" />
+          </operation>
+          <operation Id="833933b1-e468-4b45-9666-4be9db8fe9a8" name="GetBonus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cad19c8f-e6cd-466b-9ac5-5f6d12d05cea" />
+          </operation>
+          <operation Id="940dec4a-38ad-4807-917a-384af134ebb3" name="advanceLevel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17d9fd23-b7ab-4590-8ae7-8f3fdc918d84" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5b96d4e1-5b21-439b-a1f6-428acbb6f5db" name="MonsterAttack (form)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="03eb85ec-0527-4be2-8595-89e3306dcc87" />
+        <ownedAttributesInternal>
+          <property Id="75e60a53-4035-4539-81da-2789307652fa" name="Random rand" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5c07516b-e8a0-4aa9-be62-72b324bf6ff7" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="181df1cd-3754-47b6-8700-39e6a41367bd" name="fleeButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e1aa2fae-7dc0-425e-b980-42b8dea4a0da" />
+          </operation>
+          <operation Id="e67fdf41-e4d4-4c93-afc1-6a36be68de9b" name="attackButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e9269b11-361f-4dae-ba3e-9751b0b96e97" />
+          </operation>
+          <operation Id="32dbc20f-5c1d-4561-9995-2d35ebc5e921" name="bribeButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a13f2067-69d0-4b08-9fa7-a27eb64188e7" />
+          </operation>
+          <operation Id="52e5b493-e90f-43f8-abf4-bf95a96d8f87" name="continueButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0dad43b0-7f72-481c-9ded-2306867f3780" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d9a1378c-3ff9-4bec-bc13-5fe87f943333" name="KillerRabbitAttack (form)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="33862515-aeea-4b3e-8bd5-fe2ba92027f4" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d4b5e035-cc71-4237-aab9-897bdaadf906" name="Instructions (form)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="65d3adb3-579b-4c7b-9bc4-3e3291423e31" />
+        <ownedOperationsInternal>
+          <operation Id="6ed3d6f2-c091-4939-84f3-26d0b9b642bd" name="BackButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2f5f8cfc-7ccf-44dc-b825-d5d05982fd8b" />
+          </operation>
+          <operation Id="e926bc10-d381-4066-ad14-8ea0f0db6de9" name="NextButton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ccd8189d-4d83-459e-9023-8e485b1f1be2" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="323e1a98-f57e-498f-a8f5-44f3cf09cce8" name="quitAreYouSure (form)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7d886e75-4608-4cd5-ac63-89c1577b8dab" />
+        <ownedOperationsInternal>
+          <operation Id="931ceae2-34f8-4501-b9b2-a9abed724a95" name="Quit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="abdddef4-21ef-445d-bcff-756bf9607cdd" />
+          </operation>
+          <operation Id="fcddc168-58d0-4565-848d-9cd1bebc9a3d" name="Cancel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="592a2073-4f14-4753-9d7f-a8e1927dcf20" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="5df6a07b-facd-4c5a-ab9e-d3f501a15b48" name="detailUML">
+    <elementDefinition Id="569576d1-1b47-49a8-875c-f754ee8bad49" />
+    <profileInstances>
+      <packageHasProfileInstances Id="45a7b6e3-95bc-4c1a-af72-1c106e8a4659">
+        <profileInstance Id="8b36eeac-f56f-4df2-b230-8b47e35a8f84" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="820f8c3a-e7d8-44b2-8ce4-4533a576d706">
+        <profileInstance Id="40299331-1cef-4a38-87ec-e5e2f95ffc88" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

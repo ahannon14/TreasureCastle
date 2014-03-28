@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="78136e1a-cfae-4fba-a8e4-c6cf7760cc81" name="simpleUML" linkedPackageId="bacb9feb-c49c-4b0d-a089-7a5c3af84cd4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7190b606-4319-40dc-a86f-33c73002c502" name="CastleExplorer (main)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f89ef90e-8d7d-4ffb-bc94-193e97e1928b" />
+        <targetEnds>
+          <association Id="c24b1e32-f8b6-4a9e-92b0-c636a90010b8" isDerived="false" sourceEndRoleName="CastleExplorer (main)" targetEndRoleName="Maze" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ec2bf04d-c338-4d43-8afa-ec90a8ac3f2c" LastKnownName="Maze" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7d42fd2-cf9a-4616-8ec5-d9c645fa473f" name="CastleExplorer (main)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="33eadbc5-4787-48c3-aaaf-1e5e0d817305" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03071725-5e84-410e-9d11-c73326d64ca9" name="Maze" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="d6f92a21-ec9f-4698-b008-fd18e000a5a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="069ae177-833d-4c58-9d7d-49875c9aa9d6" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ec2bf04d-c338-4d43-8afa-ec90a8ac3f2c" name="Maze" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3bf74e6d-6268-4783-851f-b11f7c23437f" />
+        <targetEnds>
+          <association Id="76289146-8707-4689-b2d6-b153a31f2273" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f307fad3-09f8-44a4-a40c-3cf80fab25e1" LastKnownName="TreasureSeeker (hero)" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b45b203-b93b-4360-9199-ce655923fd8c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7b58e36f-f69b-4481-bb40-2202cc013c89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bf972c8-b244-4304-b704-c94dde2753ef" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5c89bbcc-6a63-4347-b86c-96307fcb431b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c11d385d-d429-4089-9063-dd38ee219425" />
+          </association>
+          <association Id="78a1224a-9f29-4a46-bb54-b5afac4259e4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="df1f89c6-122c-42fe-ba5c-4ea84cfb79c7" LastKnownName="Bonus" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c66ad376-97d8-4008-ab5a-baa9e414b861" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="08fc8686-60a3-4baa-9d8a-012794187720" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd9d105d-0c4a-400d-9190-e9fdb36d9387" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="be5957a7-128e-4cb7-87e1-6ce46aaae6f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9401e2a9-a985-4cda-8b44-7f7044f6730f" />
+          </association>
+          <association Id="523fe59e-7cd2-4a19-8f58-91b464be592e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="56782b0a-0979-4d03-b8f6-f3ac79ef8fe9" LastKnownName="Monster" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="923ed280-3ec5-454c-9d6c-b387185edf87" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9cdeb89a-4d36-4fb9-b145-f97b6e907ad0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab2b9351-f244-4297-8b2a-bdfb0c3fb97a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="3d3a5160-1de4-41ca-9fdc-ae4ac61c009f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="02c3e865-5dc6-4262-a92e-d2d685c14024" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="df1f89c6-122c-42fe-ba5c-4ea84cfb79c7" name="Bonus" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a7e69342-239b-45a2-ad53-b248029ffcdd" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="56782b0a-0979-4d03-b8f6-f3ac79ef8fe9" name="Monster" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="61242121-692e-4cf6-aee6-6f591a5c5870" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f307fad3-09f8-44a4-a40c-3cf80fab25e1" name="TreasureSeeker (hero)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c855cee3-5224-453f-8cc4-999e8465fc70" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ee43fbb5-f99c-4bce-a5f5-832f5668a36b" name="MonsterAttack (form)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="afdef591-ab20-4c1f-993b-60487b9217ba" />
+        <suppliersInternal>
+          <dependency Id="af9c63ce-197e-4ea6-8c5d-d8d081dbf8a0">
+            <classMoniker Id="7190b606-4319-40dc-a86f-33c73002c502" LastKnownName="CastleExplorer (main)" />
+            <elementDefinition Id="d758d064-9b47-4454-92c6-af7a54f733a0" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="819f79af-13fd-436b-9fbc-e060a2a7f999" name="FoundSomething (form)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b39ad3e1-9f8b-4ab8-8a8a-2fe50119ae4c" />
+        <suppliersInternal>
+          <dependency Id="f523f72c-8f21-4300-9529-4979f695467c">
+            <classMoniker Id="7190b606-4319-40dc-a86f-33c73002c502" LastKnownName="CastleExplorer (main)" />
+            <elementDefinition Id="d6212d06-0c1e-4ead-bbd3-e922ccc22cdf" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="bacb9feb-c49c-4b0d-a089-7a5c3af84cd4" name="simpleUML">
+    <elementDefinition Id="5df44c8c-4243-4204-b5ff-8a86b2acb302" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2d269e9e-4ea7-47c0-9e32-27fc98314056">
+        <profileInstance Id="78a89a80-4069-4dab-856a-15e300391e85" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a521828d-7c72-4d45-a2d5-8c6683d696a2">
+        <profileInstance Id="527974ec-c023-4495-b4bd-31802117e039" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="569576d1-1b47-49a8-875c-f754ee8bad49"
+  name="detailUML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="72498db4-693b-4291-84ca-94396e758fa6">
+      <body>The constructor
+calls the AddHealth() method in TreasureSeeker</body>
+      <annotatedElements>
+        <classMoniker
+          Id="12c35e71-907d-4cd9-8de7-d336a792ffad"
+          LastKnownName="ExtraHealth"
+          LastKnownLocation="detailUML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="aa57a247-169b-47e7-8adc-52495bf225ad">
+      <body>The constructor calls the AddMoney() method in TreasureSeeker</body>
+      <annotatedElements>
+        <classMoniker
+          Id="270ec555-cfe6-4f48-848a-68947acd193b"
+          LastKnownName="ExtraMoney"
+          LastKnownLocation="detailUML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7e42e3f2-d63c-4936-8cac-77c572245755">
+      <body>The constructor calls the AddLevel() method in TreasureSeeker</body>
+      <annotatedElements>
+        <classMoniker
+          Id="d045bbec-3e36-4e77-8eff-da08bc7263cd"
+          LastKnownName="ExtraSecretPassageWay"
+          LastKnownLocation="detailUML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="cd03dbdc-40ea-4759-836a-e7f93b73f954">
+      <body>A form generated when the user asks for instructions</body>
+      <annotatedElements>
+        <classMoniker
+          Id="65d3adb3-579b-4c7b-9bc4-3e3291423e31"
+          LastKnownName="Instructions (form)"
+          LastKnownLocation="detailUML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7d3706d1-490c-4bda-b160-e7ddb70ba616">
+      <body>A form generated when the MonsterAttack() method is called</body>
+      <annotatedElements>
+        <classMoniker
+          Id="03eb85ec-0527-4be2-8595-89e3306dcc87"
+          LastKnownName="MonsterAttack (form)"
+          LastKnownLocation="detailUML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="60432ae7-ef7c-44a6-8c94-16152991e0e8">
+      <body>A form generated when the hero is in a certain spot in the maze</body>
+      <annotatedElements>
+        <classMoniker
+          Id="33862515-aeea-4b3e-8bd5-fe2ba92027f4"
+          LastKnownName="KillerRabbitAttack (form)"
+          LastKnownLocation="detailUML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7f649851-611d-4dd9-9548-6cbc2ac8504e">
+      <body>A form generated when the user clicks the exit option in the toolbar.  Asks user whether they are done.</body>
+      <annotatedElements>
+        <classMoniker
+          Id="7d886e75-4608-4cd5-ac63-89c1577b8dab"
+          LastKnownName="quitAreYouSure (form)"
+          LastKnownLocation="detailUML.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="67a4557a-5955-40b5-9aed-1a04ed26e737"
+        name="Maze"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f1b6f89d-73e8-4dab-a6d2-cb77b3042c73"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1487b760-1fa6-4ba2-95c8-bee824a486e7"
+              LastKnownName="TreasureSeeker"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dcf35369-2346-4262-b9d8-43c65eb5c6da"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="858146c5-3003-404d-bc20-e82a35a300ad"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5a1b10c2-f91b-4f65-89cf-606b9da70039"
+            isDerived="false"
+            sourceEndRoleName="Maze"
+            targetEndRoleName="Monster"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="90f1dea8-04d8-4f06-9ca9-4d4ee5c78147"
+              LastKnownName="Monster"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c41f120-4bbe-4977-ab3b-c1f23fb130f8"
+                  name="Maze"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33812f74-121e-4803-9312-a08b6e9d27b9"
+                  name="Monster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="755916be-a31c-4319-8ad1-efffcad9fc29"
+                      name="Lower"
+                      value="0-5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="62e2766d-c3b8-4a7e-b3d0-cbd6dc267219"
+                      name="Upper"
+                      value="0-5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="218cec70-c0d0-4fac-a399-e339a1e7f3bc"
+            isDerived="false"
+            sourceEndRoleName="Maze"
+            targetEndRoleName="Bonus"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="49cd77eb-1fec-4500-b716-297d6bdedb46"
+              LastKnownName="Bonus"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb873b77-9f6f-4895-9ae4-f56499f63498"
+                  name="Maze"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d8837915-a4b9-4b86-a61e-cc0f914247b1"
+                  name="Bonus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="df27e887-3a3e-4060-981c-331ce20ce9b2"
+                      name="Lower"
+                      value="0-5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e041e832-f869-42b5-9d8d-63d5060ab1a6"
+                      name="Upper"
+                      value="0-5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="952cadf0-2d13-45b2-9d90-529922c1c55d"
+            name="Random rand"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6cfb6915-135f-4481-bd30-db4c7bfe4a9c"
+            name="TreasureSeeker hero"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9c654233-5e45-4a01-8d1a-bca9d22ab1b0"
+            name="Monster[] monsters"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="76fa35ed-584b-4c05-8b25-b666118c6c4b"
+            name="Bonus[] bonuses"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1487b760-1fa6-4ba2-95c8-bee824a486e7"
+        name="TreasureSeeker"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="c7eaa7f2-ac90-40c9-b741-9d30fee96d53"
+            name="&lt;&lt;property&gt;&gt; Health"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="134fa09c-5b07-47c8-b547-4cea45c0cdb2"
+                LastKnownName="int"
+                LastKnownLocation="detailUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="293ead47-309d-4cde-8ee7-44cea4326fe9"
+            name="&lt;&lt;property&gt;&gt; Money"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="134fa09c-5b07-47c8-b547-4cea45c0cdb2"
+                LastKnownName="int"
+                LastKnownLocation="detailUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e116c3c5-bcbb-4130-9d08-90c7bec008bb"
+            name="&lt;&lt;property&gt;&gt; Level"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="134fa09c-5b07-47c8-b547-4cea45c0cdb2"
+                LastKnownName="int"
+                LastKnownLocation="detailUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4d40f506-86e2-4e21-949c-8c32c0d05b43"
+            name="void AddHealth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f6ea8b97-ec93-4a12-86c9-b7e4db327e1c"
+            name="void AddMoney"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="566c1a9f-e769-40f3-af93-e20b4caac4c5"
+            name="void AddLevel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="be31245d-d8b9-455b-ba14-8aa59f90a824"
+            name="void Attack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cbbf1b1b-606b-41b4-ada7-4e3b6eb4a19e"
+            name="void Bribe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90f1dea8-04d8-4f06-9ca9-4d4ee5c78147"
+        name="Monster"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="2395dd7b-9353-43a4-96e9-27c260b03473"
+            isDerived="false"
+            sourceEndRoleName="Monster"
+            targetEndRoleName="Gremlin"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="eee0b4cb-2b4a-49e6-8708-9b6369515320"
+              LastKnownName="Gremlin"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95d91c66-ad1e-41b7-88c6-935ed235fdae"
+                  name="Monster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91581159-dc2a-4136-84e4-ae9265635f27"
+                  name="Gremlin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="15447205-b9b2-43e5-a412-9d9c4de1f6e7"
+                      name="Lower"
+                      value="0-3" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c25b8bd8-b936-4fe9-abe3-06d2149e8958"
+                      name="Upper"
+                      value="0-3" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f59874be-77f3-4efb-b909-dd54237c167d"
+            isDerived="false"
+            sourceEndRoleName="Monster"
+            targetEndRoleName="Liger"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e776a769-b46d-47ba-a626-10223a1c8df7"
+              LastKnownName="Liger"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f94b9888-abeb-42f3-9feb-f9a693ef37d5"
+                  name="Monster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac59553f-16e1-4d38-9c26-f260c5f46a83"
+                  name="Liger"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bd8b99dd-f953-4d67-a3ad-aa728f78fbc0"
+                      name="Lower"
+                      value="0-2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="67f0f5f4-152b-4f89-8b30-0bcaec1d2b78"
+                      name="Upper"
+                      value="0-2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e0330f5d-9987-4650-b407-74c522bf5523"
+            isDerived="false"
+            sourceEndRoleName="Monster"
+            targetEndRoleName="KillerRabbit"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="319f4ba7-3e69-4f0e-9009-60f9c4a7a755"
+              LastKnownName="KillerRabbit"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1b60fea-ea80-481b-b7fd-8537ed8a9231"
+                  name="Monster"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="975a5ffb-0dc6-4116-9d81-b3314cf08102"
+                  name="KillerRabbit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="8333b306-9a4c-4e7b-931c-c5a540fbf27f"
+            name="&lt;&lt;property&gt;&gt; Health"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="49cd77eb-1fec-4500-b716-297d6bdedb46"
+        name="Bonus"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="a9b94a08-927a-4a5b-ab17-b64ad468a017"
+            isDerived="false"
+            sourceEndRoleName="Bonus"
+            targetEndRoleName="ExtraHealth"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="12c35e71-907d-4cd9-8de7-d336a792ffad"
+              LastKnownName="ExtraHealth"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f1326cc-41ff-40d7-931a-166517e2178d"
+                  name="Bonus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94c703ed-26d8-482f-bd67-e78290713399"
+                  name="ExtraHealth"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7efd89a7-a500-425b-8629-21346bc590d2"
+                      name="Lower"
+                      value="0-2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="02fb9dea-b5fd-4f6c-8bf0-1846f1f251e5"
+                      name="Upper"
+                      value="0-2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="61626b8d-4b47-409f-8211-76cf716d1215"
+            isDerived="false"
+            sourceEndRoleName="Bonus"
+            targetEndRoleName="ExtraSecretPassageWay"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d045bbec-3e36-4e77-8eff-da08bc7263cd"
+              LastKnownName="ExtraSecretPassageWay"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63b3430e-6fdf-450d-9a7f-3095f8ed86e3"
+                  name="Bonus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="45668574-1847-4123-ac13-9de787d1d2ff"
+                  name="ExtraSecretPassageWay"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="545c25f1-ecc7-434e-8558-e66e61e26dd7"
+                      name="Lower"
+                      value="0-1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7c94b0b5-6ffc-4a20-904c-9f9d5e1a1101"
+                      name="Upper"
+                      value="0-1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="73d31579-34ff-423c-8cb7-5f66dcb62239"
+            isDerived="false"
+            sourceEndRoleName="Bonus"
+            targetEndRoleName="ExtraMoney"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="270ec555-cfe6-4f48-848a-68947acd193b"
+              LastKnownName="ExtraMoney"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ec821cb-93b6-4b37-96a9-87917e64dc17"
+                  name="Bonus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f6e672ac-686c-4f9c-8026-2fd8ae3ea4e2"
+                  name="ExtraMoney"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8e715ad4-8c57-485c-bfe4-a2ebb084d73f"
+                      name="Lower"
+                      value="0-2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="11194364-937f-4d7e-a3af-df6f6dde7bcd"
+                      name="Upper"
+                      value="0-2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eee0b4cb-2b4a-49e6-8708-9b6369515320"
+        name="Gremlin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5560daff-7f16-40aa-a4df-9f7742a18713"
+            name="&lt;&lt;property&gt;&gt; Health"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="319f4ba7-3e69-4f0e-9009-60f9c4a7a755"
+        name="KillerRabbit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="c6e8746d-67b7-4733-8b78-aabb491dd09c"
+            name="&lt;&lt;property&gt;&gt; Health"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e776a769-b46d-47ba-a626-10223a1c8df7"
+        name="Liger"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5781a09b-ada1-47be-a8d1-f63d532be1b0"
+            name="&lt;&lt;property&gt;&gt; Health"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="12c35e71-907d-4cd9-8de7-d336a792ffad"
+        name="ExtraHealth"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="c785fba3-bc44-4e6b-9c32-97817a0308f8"
+            name="public ExtraHealth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d045bbec-3e36-4e77-8eff-da08bc7263cd"
+        name="ExtraSecretPassageWay"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="2f048c02-e143-4be5-8767-a451d532a21b"
+            name="public ExtraSecretPassageWay"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="270ec555-cfe6-4f48-848a-68947acd193b"
+        name="ExtraMoney"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="30cdfd2c-b979-45ef-925a-c89fbfbbdb63"
+            name="public ExtraMoney"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="134fa09c-5b07-47c8-b547-4cea45c0cdb2"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ee57a8b7-8b26-4ca8-a5c9-b043cdfc0aea"
+        name="CastleExplorer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ae7f7b60-9c22-4ab6-8d64-a95c1dd90ea3"
+            isDerived="false"
+            sourceEndRoleName="Castle Explorer"
+            targetEndRoleName="Maze"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="67a4557a-5955-40b5-9aed-1a04ed26e737"
+              LastKnownName="Maze"
+              LastKnownLocation="detailUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="145a0a8d-b56d-4e0a-85ca-ac20472db380"
+                  name="Castle Explorer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0054cec7-d6fb-47ef-95bc-8c89aa0d687f"
+                  name="Maze"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="07eb0cd6-e425-4e35-a567-3f8dd0749719"
+            name="Random rand"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fc8b6f24-b0e1-4b23-98e0-33577e8337b8"
+            name="Maze maze"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fe0e2658-148b-4caf-986d-216e75208cc9"
+            name="bool[4,13,13] levelArrays"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b9fd2349-03c7-4a14-a8b2-c4687ea7d452"
+            name="save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="221cf140-27f7-4bd1-bf62-614feb28e0bd"
+            name="playButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f5e8ea57-f8db-4d70-bca8-8a1629900904"
+            name="instructionsButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="98e51a7e-8df4-4073-9087-e7d21d2b5f04"
+            name="quitButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5a1a3749-5463-4b07-a600-b679a589a0d6"
+            name="keyDown"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a111802c-f76a-432d-aaba-79aa792ed5ca"
+            name="MonsterAttack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cad19c8f-e6cd-466b-9ac5-5f6d12d05cea"
+            name="GetBonus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="17d9fd23-b7ab-4590-8ae7-8f3fdc918d84"
+            name="advanceLevel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="03eb85ec-0527-4be2-8595-89e3306dcc87"
+        name="MonsterAttack (form)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5c07516b-e8a0-4aa9-be62-72b324bf6ff7"
+            name="Random rand"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e1aa2fae-7dc0-425e-b980-42b8dea4a0da"
+            name="fleeButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e9269b11-361f-4dae-ba3e-9751b0b96e97"
+            name="attackButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a13f2067-69d0-4b08-9fa7-a27eb64188e7"
+            name="bribeButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0dad43b0-7f72-481c-9ded-2306867f3780"
+            name="continueButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bc55f91a-55dc-43e0-991d-5c047aec5945"
+        name="FoundSomething (form)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="33862515-aeea-4b3e-8bd5-fe2ba92027f4"
+        name="KillerRabbitAttack (form)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="65d3adb3-579b-4c7b-9bc4-3e3291423e31"
+        name="Instructions (form)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="2f5f8cfc-7ccf-44dc-b825-d5d05982fd8b"
+            name="BackButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ccd8189d-4d83-459e-9023-8e485b1f1be2"
+            name="NextButton"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7d886e75-4608-4cd5-ac63-89c1577b8dab"
+        name="quitAreYouSure (form)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="abdddef4-21ef-445d-bcff-756bf9607cdd"
+            name="Quit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="592a2073-4f14-4753-9d7f-a8e1927dcf20"
+            name="Cancel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
